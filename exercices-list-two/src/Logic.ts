@@ -11,7 +11,7 @@ export default class Logic{
     public calcCircleArea(ray: number): string {
         const PI = 3.14;
         let area = (PI * ray) ^ 2;
-        let perimeter = 2 * PI * ray;
+        let perimeter = Math.trunc(2 * PI * ray);
 
         return `Area fo this circle: ${area}. Perimeter of this circle: ${perimeter}`;
     }
@@ -54,7 +54,7 @@ export default class Logic{
 
     // Convert temperature from Fahrenheit to Celsius.
     public convert(temp: number): string {
-        const tempCelsius = 5 * 9 / (temp - 32);
+        const tempCelsius = (5 * 9 / (temp - 32)).toFixed(2);
 
         return `The temperature em degree Celsius is ${tempCelsius}°C.`;
     }
