@@ -1,0 +1,10 @@
+local storage é um espaço de armazenamento no próprio navegador;
+
+session atorage -> os dados persistem até que o navgeador seja fechado, quando isso acontece os dados se perdem;
+já no localStorage os dados persistem por tempo indeterminado.
+
+Para persistir os dados no local atoriage você precisa definir/informar uma chave, e os dados serão armazenados em uma tabela com a chave e o valor.
+
+Para que os dados sejam envados para o local storage é preciso converter para JSON, pode se usar JSON.stringfy(obj);
+Depois será preciso converter a string para objeto outra vez.
+
